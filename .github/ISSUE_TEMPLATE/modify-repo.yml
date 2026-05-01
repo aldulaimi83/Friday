@@ -1,1 +1,37 @@
+name: Modify Existing Repository
+description: Request changes to an existing Youooo repository
+title: "[Modify Repo]: "
+labels: ["modify-repo", "codex-task"]
 
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repository Name
+      description: Example: aldulaimi83/game
+      placeholder: aldulaimi83/game
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What do you want changed?
+      placeholder: Example: Add SEO pages, remove footer links, improve layout.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rules
+    attributes:
+      label: Rules
+      description: Important limits
+      value: |
+        - Keep current UI design unchanged
+        - Do not break existing features
+        - Do not remove working functionality
+        - Test changes before finishing
+        - Create a Pull Request (do not push to main)
+    validations:
+      required: true
