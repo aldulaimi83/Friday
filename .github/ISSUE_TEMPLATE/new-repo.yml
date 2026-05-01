@@ -8,7 +8,7 @@ body:
     id: repo_name
     attributes:
       label: New Repository Name
-      description: Example: youooo-wordle, youooo-sudoku
+      description: "Example: youooo-wordle, youooo-sudoku"
       placeholder: youooo-new-project
     validations:
       required: true
@@ -17,8 +17,8 @@ body:
     id: idea
     attributes:
       label: Project Idea
-      description: Describe what you want built
-      placeholder: Example: Build a Wordle-style game with dark UI and daily challenge
+      description: "Describe what you want built"
+      placeholder: "Example: Build a Wordle-style game with dark UI and daily challenge"
     validations:
       required: true
 
