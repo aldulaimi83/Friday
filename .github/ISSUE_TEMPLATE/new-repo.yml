@@ -1,1 +1,49 @@
+name: Create New Repository
+description: Request a brand new Youooo project
+title: "[New Repo]: "
+labels: ["new-repo", "codex-task"]
 
+body:
+  - type: input
+    id: repo_name
+    attributes:
+      label: New Repository Name
+      description: Example: youooo-wordle, youooo-sudoku
+      placeholder: youooo-new-project
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Project Idea
+      description: Describe what you want built
+      placeholder: Example: Build a Wordle-style game with dark UI and daily challenge
+    validations:
+      required: true
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment Target
+      options:
+        - GitHub Pages
+        - Cloudflare Pages
+        - Cloudflare Workers
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      value: |
+        - Mobile-friendly
+        - SEO optimized
+        - Clean modern UI
+        - Include README.md
+        - Include sitemap.xml if public
+        - Keep it simple and clean
+    validations:
+      required: true
